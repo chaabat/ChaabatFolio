@@ -59,117 +59,17 @@ export const preloadAdjacentProjectDetails = async (project: PortfolioProject): 
     );
 };
 
-const frontEndProjects: PortfolioProject[] = [
-    {
-        id: 'Siae',
-        title: 'SIAE — Gestion des Droits d\'Auteur',
-        label: 'SIAE ',
-
-        description:
-            'Supervision des traitements batch SQL, automatisation des tâches système sous Linux et analyse des incidents de production. Contribution active à l\'optimisation des performances applicatives, à la conteneurisation et à la fiabilisation de la continuité de service.',
-
-        period: '6 mois',
-        role: 'Ingénieur DevOps / Support N3',
-
-        skills: [
-            'front-end',
-            'linux',
-            'sql',
-            'python',
-            'docker',
-            'ci-cd',
-            'monitoring',
-            'automation',
-            'incident-management',
-        ],
-
-        domain: 'Intellectual Property / Rights Management',
-        owner: 'NTT DATA (Tétouan, Maroc)',
-
-        constellation: {
-            id: 'front-end',
-            position: [-1.02, 0.82, -0.18],
-            links: ['nttdata-flyer'],
-        },
-    },
-    {
-        id: 'flyer',
-        title: 'Flyer.be — Plateforme E-Commerce Print on Demand',
-        label: 'Flyer.be',
-
-        description:
-            'Migration applicative vers un framework moderne et maintenance évolutive. Mise en place de la conteneurisation Docker, intégration dans les pipelines CI/CD et développement de fonctionnalités web / UI au sein d\'une équipe Scrum.',
-
-        period: '2024',
-        role: 'DevOps / Full-Stack Engineer',
-
-        skills: [
-            'front-end',
-            'docker',
-            'ci-cd',
-            'laravel',
-            'next-js',
-            'mongodb',
-            'git',
-            'scrum',
-            'containerization',
-        ],
-
-        domain: 'E-Commerce / Print on Demand',
-        owner: 'Elavi',
-
-        constellation: {
-            id: 'front-end',
-            position: [-0.08, 1.5, -0.28],
-            links: ['sentinel-x', 'nttdata-livriliya'],
-        },
-    },
-    {
-        id: 'livriliya',
-        title: 'Livriliya — Plateforme SaaS de Livraison en Temps Réel',
-        label: 'Livriliya',
-
-        description:
-            'Conception et intégration d\'un système de notifications temps réel pour les livreurs. Optimisation des flux de données, déclencheurs d\'événements à chaque commande et amélioration de l\'expérience utilisateur.',
-
-        period: '2024',
-        role: 'Software & Cloud Engineer',
-
-        skills: [
-            'front-end',
-            'rest-api',
-            'sql',
-            'php',
-            'laravel',
-            'react',
-            'javascript',
-            'real-time-events',
-        ],
-
-        domain: 'Logistics / Delivery SaaS',
-        owner: 'NTT DATA (Tétouan, Maroc)',
-
-        constellation: {
-            id: 'front-end',
-            position: [-0.42, -0.16, 0.02],
-            links: ['nttdata-flyer'],
-        },
-    },
-    
-    
-];
-
 const fullStackProjects: PortfolioProject[] = [
     {
         id: 'assurance-company',
-        title: 'AssuranceCompany: Plateforme Microservices de Gestion d\'Assurance',
+        title: 'AssuranceCompany — Insurance Management Platform',
         label: 'AssuranceCompany',
 
         description:
-            'Architecture distribuée basée sur des microservices pour la gestion complète d\'une compagnie d\'assurance. Découplage des services back-end et interface utilisateur dynamique en ReactJS pour le traitement efficace des souscriptions et sinistres.',
+            'Distributed microservices architecture for end-to-end insurance management. Decoupled back-end services with a dynamic React interface for efficient policy subscriptions and claims processing.',
 
         period: '2024 – 2025',
-        role: 'Full-Stack Developer / Architecte Microservices',
+        role: 'Full-Stack Developer',
 
         skills: [
             'full-stack',
@@ -182,82 +82,22 @@ const fullStackProjects: PortfolioProject[] = [
             'system-design',
         ],
 
-        domain: 'Fintech / Assurance',
-        owner: 'Projet Personnel',
+        domain: 'Fintech / Insurance',
+        owner: 'Personal project',
 
         constellation: {
             id: 'full-stack',
-            position: [0.95, 1.4, -0.06],
-            links: ['justcash', 'nostalgia'],
-        },
-    },
-    {
-        id: 'justcash',
-        title: 'JustCash: Application Bancaire Back-End Microservices',
-        label: 'JustCash',
-
-        description:
-            'Plateforme bancaire back-end construite autour d\'une architecture microservices. Implémentation d\'APIs REST sécurisées pour la gestion des comptes, le traitement des transactions financières en temps réel et la communication inter-services.',
-
-        period: '2024 – 2025',
-        role: 'Back-End Developer',
-
-        skills: [
-            'back-end',
-            'java',
-            'spring-boot',
-            'microservices',
-            'rest-api',
-            'database-management',
-            'banking-security',
-        ],
-
-        domain: 'Banking / Fintech',
-        owner: 'Projet Personnel',
-
-        constellation: {
-            id: 'full-stack',
-            position: [0.485, 0.95, 0.14],
-            links: ['assurance-company'],
-        },
-    },
-    {
-        id: 'citronix',
-        title: 'Citronix: Système de Gestion d\'Exploitation Agricole',
-        label: 'Citronix',
-
-        description:
-            'Application dédiée à la gestion intégrée de fermes et vergers d\'agrumes. Suivi du cycle de vie des cultures, optimisation de la récolte, gestion des ventes et contrôle des stocks pour maximiser la productivité agricole.',
-
-        period: '2024 – 2025',
-        role: 'Back-End Developer',
-
-        skills: [
-            'back-end',
-            'java',
-            'spring-boot',
-            'postgresql',
-            'rest-api',
-            'domain-driven-design',
-            'farm-management',
-        ],
-
-        domain: 'Agritech / Enterprise Software',
-        owner: 'Projet Personnel',
-
-        constellation: {
-            id: 'full-stack',
-            position: [0.15, 0.6, -0.1],
-            links: ['justcash', 'school-management'],
+            position: [0.0, 0.0, 0.15],
+            links: ['justcash', 'nostalgia', 'parents-pearl'],
         },
     },
     {
         id: 'nostalgia',
-        title: 'Nostalgia: Application Full-Stack de Streaming Musical',
+        title: 'Nostalgia — Music Streaming Platform',
         label: 'Nostalgia',
 
         description:
-            'Plateforme de streaming musical associant un back-end Spring Boot sécurisé pour la gestion dynamique du catalogue à un front-end Angular réactif assurant la lecture fluide et l\'organisation des playlists.',
+            'Music streaming platform combining a secured Spring Boot back-end for catalog management with a reactive Angular front-end for smooth playback and playlist organization.',
 
         period: '2024 – 2025',
         role: 'Full-Stack Developer',
@@ -274,22 +114,139 @@ const fullStackProjects: PortfolioProject[] = [
         ],
 
         domain: 'Media / Entertainment',
-        owner: 'Projet Personnel',
+        owner: 'Personal project',
 
         constellation: {
             id: 'full-stack',
-            position: [-0.773, -0.9, 0],
-            links: ['greentogether', 'parents-pearl'],
-            labelOffset: [0, 0.12],
+            position: [0.0, 1.05, -0.1],
+            links: ['justcash', 'parents-pearl'],
+        },
+    },
+    {
+        id: 'justcash',
+        title: 'JustCash — Banking Microservices Back-End',
+        label: 'JustCash',
+
+        description:
+            'Banking back-end built on a microservices architecture. Secured REST APIs for account management, real-time transaction processing and inter-service communication.',
+
+        period: '2024 – 2025',
+        role: 'Back-End Developer',
+
+        skills: [
+            'full-stack',
+            'java',
+            'spring-boot',
+            'microservices',
+            'rest-api',
+            'database-management',
+            'api-security',
+        ],
+
+        domain: 'Banking / Fintech',
+        owner: 'Personal project',
+
+        constellation: {
+            id: 'full-stack',
+            position: [0.92, 0.55, 0.05],
+            links: ['citronix'],
+        },
+    },
+    {
+        id: 'citronix',
+        title: 'Citronix — Farm Management System',
+        label: 'Citronix',
+
+        description:
+            'Application for the integrated management of citrus farms and orchards: crop life-cycle tracking, harvest optimization, sales management and stock control.',
+
+        period: '2024 – 2025',
+        role: 'Back-End Developer',
+
+        skills: [
+            'full-stack',
+            'java',
+            'spring-boot',
+            'postgresql',
+            'rest-api',
+            'domain-driven-design',
+        ],
+
+        domain: 'Agritech / Enterprise Software',
+        owner: 'Personal project',
+
+        constellation: {
+            id: 'full-stack',
+            position: [0.9, -0.5, -0.1],
+            links: ['school-management'],
+        },
+    },
+    {
+        id: 'school-management',
+        title: 'School Management — School Administration System',
+        label: 'School Management',
+
+        description:
+            'Web platform for school administration: student enrollment, timetables, grades, absences and communication between teachers, students and administration.',
+
+        period: '2024',
+        role: 'Full-Stack Developer',
+
+        skills: [
+            'full-stack',
+            'laravel',
+            'php',
+            'mysql',
+            'blade',
+            'bootstrap',
+            'web-architecture',
+        ],
+
+        domain: 'EdTech / Enterprise',
+        owner: 'Personal project',
+
+        constellation: {
+            id: 'full-stack',
+            position: [0.05, -1.0, 0.1],
+            links: ['greentogether'],
+        },
+    },
+    {
+        id: 'greentogether',
+        title: 'GreenTogether — Recycling Management Platform',
+        label: 'GreenTogether',
+
+        description:
+            'Collaborative platform connecting households with approved collectors. Automated collection tracking and digitized the waste-management workflow.',
+
+        period: '2024 – 2025',
+        role: 'Full-Stack Developer',
+
+        skills: [
+            'full-stack',
+            'typescript',
+            'react',
+            'node-js',
+            'geolocation',
+            'workflow-automation',
+        ],
+
+        domain: 'Cleantech / Ecology',
+        owner: 'Personal project',
+
+        constellation: {
+            id: 'full-stack',
+            position: [-0.9, -0.55, 0.05],
+            links: ['parents-pearl'],
         },
     },
     {
         id: 'parents-pearl',
-        title: 'Parents_Pearl: Application Web & Mobile Pédagogique',
+        title: 'Parents Pearl — Parenting & Education Platform',
         label: 'Parents Pearl',
 
         description:
-            'Plateforme de suivi et de communication dédiée à l\'accompagnement parental et éducatif. Offre une interface fluide et moderne pour la gestion des informations, activités et interactions quotidiennes des parents.',
+            'Tracking and communication platform for parental and educational support, with a modern interface for managing information, activities and daily interactions.',
 
         period: '2024 – 2025',
         role: 'Full-Stack Developer',
@@ -301,165 +258,197 @@ const fullStackProjects: PortfolioProject[] = [
             'node-js',
             'rest-api',
             'ui-ux',
-            'educational-tech',
         ],
 
         domain: 'EdTech / Social',
-        owner: 'Projet Personnel',
+        owner: 'Personal project',
 
         constellation: {
             id: 'full-stack',
-            position: [-0.45, -0.5, 0.2],
-            links: ['nostalgia'],
-        },
-    },
-    {
-        id: 'greentogether',
-        title: 'GreenTogether: Plateforme de Gestion de Recyclage',
-        label: 'GreenTogether',
-
-        description:
-            'Application collaborative facilitant le recyclage en connectant les particuliers avec des collecteurs agréés. Automatisation du suivi des collectes et optimisation de la gestion des déchets à travers un workflow digitalisé.',
-
-        period: '2024 – 2025',
-        role: 'Full-Stack Developer',
-
-        skills: [
-            'full-stack',
-            'typescript',
-            'react',
-            'node-js',
-            'geolocated-services',
-            'sustainability-tech',
-            'workflow-automation',
-        ],
-
-        domain: 'Cleantech / Ecology',
-        owner: 'Projet Personnel',
-
-        constellation: {
-            id: 'full-stack',
-            position: [-1.009, 0.088, 0.1],
-            links: ['assurance-company'],
-        },
-    },
-    {
-        id: 'school-management',
-        title: 'School Management: Système de Gestion Établissement Scolaire',
-        label: 'School Mgmt',
-
-        description:
-            'Plateforme web complète pour l\'administration d\'établissements scolaires. Inscription des étudiants, suivi des emplois du temps, gestion des notes, absences et communication entre enseignants, élèves et administration.',
-
-        period: '2024',
-        role: 'Full-Stack Developer',
-
-        skills: [
-            'full-stack',
-            'laravel',
-            'blade',
-            'php',
-            'mysql',
-            'bootstrap',
-            'web-architecture',
-        ],
-
-        domain: 'EdTech / Enterprise',
-        owner: 'Projet Personnel',
-
-        constellation: {
-            id: 'full-stack',
-            position: [0.65, -0.3, -0.15],
-            links: ['citronix'],
-            labelOffset: [0, -0.12],
+            position: [-0.88, 0.5, -0.08],
+            links: [],
         },
     },
 ];
 
-const backEndProjects: PortfolioProject[] = [
+const devOpsCloudProjects: PortfolioProject[] = [
+    {
+        id: 'siae',
+        title: 'SIAE — Copyright Management Platform',
+        label: 'SIAE',
+
+        description:
+            'Supervised SQL batch processing and automated Linux system tasks on a copyright-management platform. Analyzed production incidents, optimized application performance and worked with the infrastructure teams to improve service reliability and continuity.',
+
+        period: '6 months',
+        role: 'DevOps Engineer',
+
+        skills: [
+            'devops-cloud',
+            'linux',
+            'sql',
+            'python',
+            'docker',
+            'ci-cd',
+            'monitoring',
+            'automation',
+            'incident-management',
+        ],
+
+        domain: 'Intellectual Property / Rights Management',
+        owner: 'NTT DATA · Tétouan, Morocco',
+
+        constellation: {
+            id: 'devops-cloud',
+            position: [-1.0, -0.15, -0.1],
+            links: ['flyer'],
+        },
+    },
+    {
+        id: 'flyer',
+        title: 'Flyer.be — Print-on-Demand E-Commerce Platform',
+        label: 'Flyer.be',
+
+        description:
+            'Migrated the web application to a new framework and handled corrective and evolutive maintenance. Containerized services with Docker, automated builds and deployments with CI/CD pipelines, and delivered web features within a Scrum team.',
+
+        period: '6 months',
+        role: 'Full-Stack Developer',
+
+        skills: [
+            'devops-cloud',
+            'docker',
+            'ci-cd',
+            'containerization',
+            'laravel',
+            'next-js',
+            'mongodb',
+            'git',
+            'scrum',
+        ],
+
+        domain: 'E-Commerce / Print on Demand',
+        owner: 'ELAVI · Casablanca, Morocco',
+
+        constellation: {
+            id: 'devops-cloud',
+            position: [0.0, 0.95, 0.05],
+            links: ['siae', 'livriliya'],
+        },
+    },
+    {
+        id: 'livriliya',
+        title: 'Livriliya — Real-Time Delivery Platform',
+        label: 'Livriliya',
+
+        description:
+            'Designed and integrated a real-time notification system for couriers. Managed data flows and event triggers for every new order and improved responsiveness to reduce order handling time.',
+
+        period: '1 year',
+        role: 'Web Developer',
+
+        skills: [
+            'devops-cloud',
+            'rest-api',
+            'sql',
+            'php',
+            'laravel',
+            'react',
+            'javascript',
+            'real-time-events',
+        ],
+
+        domain: 'Logistics / Delivery',
+        owner: 'EAGER GROUPS · Azrou, Morocco',
+
+        constellation: {
+            id: 'devops-cloud',
+            position: [0.95, 0.0, -0.1],
+            links: ['flyer'],
+        },
+    },
+];
+
+const infraSecurityProjects: PortfolioProject[] = [
     {
         id: 'assurcorp',
-        title: 'AssurCorp — Infrastructure & Sécurisation Réseau',
+        title: 'AssurCorp — Secure Enterprise Network',
         label: 'AssurCorp',
 
         description:
-            'Conception et sécurisation d\'une infrastructure d\'entreprise du secteur de l\'assurance. Centralisation des accès via Active Directory et LAPS, haute disponibilité du routage avec MikroTik/VRRP, réplication de fichiers DFS-R, pare-feu pfSense/OPNsense (VPN IPsec) et supervision temps réel Grafana via SNMP.',
+            'Design and hardening of an insurance-sector infrastructure: centralized access with Active Directory and LAPS, high-availability routing with MikroTik and VRRP, DFS-R file replication, pfSense/OPNsense firewalls with IPsec VPN, and real-time Grafana monitoring over SNMP.',
 
         period: '2025 – 2026',
-        role: 'Ingénieur Infrastructure & Cybersécurité',
+        role: 'Infrastructure & Cybersecurity Engineer',
 
         skills: [
-            'back-end',
+            'infra-security',
             'windows-server',
             'active-directory',
-            'laps',
             'pfsense',
             'opnsense',
             'mikrotik',
             'vrrp',
             'ipsec-vpn',
-            'dfs-r',
             'snmp',
             'grafana',
             'network-security',
         ],
 
-        domain: 'Infrastructure & Cybersecurity / Systems Administration',
-        owner: 'Projet Académique / Entreprise Fictive',
+        domain: 'Infrastructure & Cybersecurity',
+        owner: 'Academic project · fictional company',
 
         constellation: {
-            id: 'back-end',
-            position: [0.64, 1.14, -0.3],
+            id: 'infra-security',
+            position: [0.7, 1.1, -0.25],
             links: ['naturacorp', 'sentinel-x'],
         },
     },
     {
         id: 'naturacorp',
-        title: 'NaturaCorp — Infrastructure Virtualisée & Services Collaboratifs',
+        title: 'NaturaCorp — Virtualized Infrastructure & Collaboration Services',
         label: 'NaturaCorp',
 
         description:
-            'Déploiement complet d\'une infrastructure d\'entreprise virtualisée sous VMware. Segmentation réseau via pfSense (DMZ), intégration de l\'ERP Odoo, solution de stockage sécurisé Nextcloud, supervision proactive avec Zabbix et politique de sauvegarde/restauration centralisée avec UrBackup.',
+            'Full deployment of a virtualized enterprise infrastructure on VMware: network segmentation with a pfSense DMZ, Odoo ERP integration, Nextcloud secure storage, proactive Zabbix monitoring and centralized UrBackup backup and restore.',
 
         period: '2025 – 2026',
-        role: 'Architecte Infrastructure & Virtualisation',
+        role: 'Infrastructure & Virtualization Architect',
 
         skills: [
-            'back-end',
+            'infra-security',
             'vmware',
             'pfsense',
             'dmz-segmentation',
-            'odoo-erp',
+            'odoo',
             'nextcloud',
             'zabbix',
             'urbackup',
-            'sysadmin',
             'virtualization',
         ],
 
-        domain: 'Enterprise Infrastructure / Cloud & Virtualization',
-        owner: 'Projet Académique / Entreprise Fictive',
+        domain: 'Enterprise Infrastructure / Virtualization',
+        owner: 'Academic project · fictional company',
 
         constellation: {
-            id: 'back-end',
-            position: [-0.48, -0.92, -0.02],
-            labelOffset: [0.28, 0],
+            id: 'infra-security',
+            position: [-0.1, -0.85, 0.0],
             links: ['sentinel-x'],
         },
     },
     {
         id: 'sentinel-x',
-        title: 'Sentinel-X — Système d\'Observabilité IoT & Détection Sécurité IA',
+        title: 'Sentinel-X — IoT Observability & AI Security Detection',
         label: 'Sentinel-X',
 
         description:
-            'Plateforme de surveillance et d\'analyse de sécurité IoT/IA. Intégration de détection d\'objets YOLO, transmission d\'événements via MQTT, surveillance SIEM/XDR avec Wazuh, et centralisation des métriques de métrologie sur tableaux de bord Grafana.',
+            'IoT and AI security monitoring platform: YOLO object detection, event transport over MQTT, SIEM/XDR monitoring with Wazuh, and metrics centralized in Grafana dashboards.',
 
         period: '2026',
-        role: 'DevOps & Cybersecurity Specialist',
+        role: 'DevOps & Cybersecurity Engineer',
 
         skills: [
-            'back-end',
+            'infra-security',
             'python',
             'iot',
             'mqtt',
@@ -467,26 +456,24 @@ const backEndProjects: PortfolioProject[] = [
             'grafana',
             'yolo',
             'raspberry-pi',
-            'cybersecurity',
-            'siem-monitoring',
+            'siem-xdr',
         ],
 
         domain: 'Cybersecurity / IoT & AI Observability',
-        owner: 'Projet Personnel',
+        owner: 'Personal project',
 
         constellation: {
-            id: 'back-end',
-            position: [-1, 0.66, 0.1],
-            labelOffset: [-0.05, 0.05],
-            links: ['assurcorp'],
+            id: 'infra-security',
+            position: [-0.95, 0.7, 0.1],
+            links: [],
         },
     },
 ];
 
 const constellationScrollOrder = {
-    'front-end': 0,
-    'full-stack': 1,
-    'back-end': 2,
+    'full-stack': 0,
+    'devops-cloud': 1,
+    'infra-security': 2,
 } satisfies Record<PortfolioProject['constellation']['id'], number>;
 
 const compareProjectScrollOrder = (a: PortfolioProject, b: PortfolioProject): number =>
@@ -495,9 +482,9 @@ const compareProjectScrollOrder = (a: PortfolioProject, b: PortfolioProject): nu
     b.constellation.position[1] - a.constellation.position[1];
 
 const portfolioProjectsWithoutScreenshots: PortfolioProject[] = [
-    ...frontEndProjects,
     ...fullStackProjects,
-    ...backEndProjects,
+    ...devOpsCloudProjects,
+    ...infraSecurityProjects,
 ].sort(compareProjectScrollOrder);
 
 export const portfolioProjects: PortfolioProject[] = withProjectScreenshots(
