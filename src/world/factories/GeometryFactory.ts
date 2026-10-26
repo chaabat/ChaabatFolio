@@ -209,7 +209,7 @@ export function createTextMorphPositions(
     const textGeometry = new TextGeometry(text, {
         font,
         size: 2,
-        depth: 0.4,
+        depth: 0.15,
         curveSegments: PERFOMANCE_EFFICIENT_SEGMENTS_COUNT,
     });
     const samplerMaterial = new THREE.MeshBasicMaterial();
@@ -232,7 +232,7 @@ export function createTextMorphPositions(
     geometry.center();
 
     for (let index = 0; index < positionAttribute.count; index += 1) {
-        positionAttribute.setZ(index, positionAttribute.getZ(index) + Math.random() * 0.4 - 0.2);
+        positionAttribute.setZ(index, positionAttribute.getZ(index) + Math.random() * 0.15 - 0.075);
     }
 
     const cloudAttribute = new THREE.BufferAttribute(cloudPositions, 3);

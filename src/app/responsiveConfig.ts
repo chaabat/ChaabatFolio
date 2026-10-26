@@ -264,7 +264,7 @@ const getResponsiveConfig = (
             renderer: {
                 pixelRatioCap: DESKTOP_PIXEL_RATIO_CAP,
                 bloomPixelRatioCap: DESKTOP_BLOOM_PIXEL_RATIO_CAP,
-                bloomPassStrengthScale: 1,
+                bloomPassStrengthScale: 0.6,
                 textBloomStrengthScale: 1.6,
             },
             coloredLight: {
@@ -331,7 +331,7 @@ const getResponsiveConfig = (
             renderer: {
                 pixelRatioCap: DESKTOP_PIXEL_RATIO_CAP,
                 bloomPixelRatioCap: DESKTOP_BLOOM_PIXEL_RATIO_CAP,
-                bloomPassStrengthScale: 1,
+                bloomPassStrengthScale: 0.6,
                 textBloomStrengthScale: 1.38,
             },
             coloredLight: {
