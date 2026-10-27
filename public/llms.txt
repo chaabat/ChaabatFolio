@@ -1,0 +1,40 @@
+# Ayoub Chaabat
+
+> DevOps engineer and full-stack developer building secure, automated infrastructures and web applications with Linux, Docker, CI/CD, Laravel, React and Spring Boot.
+
+Ayoub Chaabat is a Bachelor AIS student (Administration des Infrastructures Sécurisées) at IRIS Strasbourg, preparing a Master Expert DevOps at EPSI Paris (2026–2028). He combines infrastructure administration and cybersecurity with full-stack web development. This site is an interactive 3D portfolio.
+
+## Primary resource
+
+- [Portfolio](https://chaabat.com/): Canonical portfolio with professional experience, education, selected projects and contact options.
+
+## Professional focus
+
+- DevOps and cloud: Linux automation, Docker containerization, CI/CD pipelines, monitoring, incident analysis and SQL batch supervision.
+- Infrastructure and cybersecurity: Windows Server, Active Directory, pfSense/OPNsense, MikroTik, IPsec VPN, VMware, Zabbix, Grafana, Wazuh (SIEM/XDR) and backup strategies.
+- Full-stack development: Laravel, PHP, React, Next.js, Angular, TypeScript, Node.js, Java/Spring Boot microservices, REST APIs, SQL, PostgreSQL, MongoDB.
+
+## Experience
+
+- **NTT DATA (Tétouan, Morocco), DevOps Engineer, 6 months.** SIAE copyright-management platform: SQL batch supervision, Linux task automation, production incident analysis and performance optimization.
+- **ELAVI (Casablanca, Morocco), Full-Stack Developer, 6 months.** Flyer.be print-on-demand e-commerce platform: framework migration, Docker containerization, CI/CD automation, Scrum team.
+- **EAGER GROUPS (Azrou, Morocco), Web Developer, 1 year.** Livriliya delivery platform: real-time courier notifications, data flows and event triggers.
+
+## Selected projects
+
+- **AssurCorp:** secure insurance-sector network with Active Directory, MikroTik/VRRP, DFS-R, pfSense/OPNsense with IPsec VPN, and Grafana monitoring over SNMP.
+- **NaturaCorp:** virtualized enterprise infrastructure on VMware with a pfSense DMZ, Odoo, Nextcloud, Zabbix and UrBackup.
+- **Sentinel-X:** IoT and AI security observability with YOLO detection, MQTT, Wazuh and Grafana.
+- **AssuranceCompany, JustCash, Citronix, Nostalgia, School Management, GreenTogether, Parents Pearl:** full-stack and microservices applications.
+
+## Education
+
+- EPSI Paris, Master Expert DevOps (2026–2028)
+- IRIS Strasbourg, Bachelor AIS (2025–2026)
+- UM6P (Mohammed VI Polytechnic University), Full-Stack Developer training with YouCode (2023–2025)
+
+## Contact
+
+- Contact form: https://chaabat.com/#contact
+- Email: contact@chaabat.com
+- GitHub: https://github.com/chaabat
