@@ -199,7 +199,7 @@ const fullStackProjects: PortfolioProject[] = [
             'mysql',
             'blade',
             'bootstrap',
-            'web-architecture',
+            'MVC-architecture',
         ],
 
         domain: 'EdTech / Enterprise',
@@ -254,7 +254,8 @@ const fullStackProjects: PortfolioProject[] = [
         skills: [
             'full-stack',
             'typescript',
-            'react',
+            'angular',
+            'spring boot',
             'node-js',
             'rest-api',
             'ui-ux',
@@ -280,7 +281,7 @@ const devOpsCloudProjects: PortfolioProject[] = [
         description:
             'Supervised SQL batch processing and automated Linux system tasks on a copyright-management platform. Analyzed production incidents, optimized application performance and worked with the infrastructure teams to improve service reliability and continuity.',
 
-        period: '6 months',
+        period: '2025',
         role: 'DevOps Engineer',
 
         skills: [
@@ -312,7 +313,7 @@ const devOpsCloudProjects: PortfolioProject[] = [
         description:
             'Migrated the web application to a new framework and handled corrective and evolutive maintenance. Containerized services with Docker, automated builds and deployments with CI/CD pipelines, and delivered web features within a Scrum team.',
 
-        period: '6 months',
+        period: '2025',
         role: 'Full-Stack Developer',
 
         skills: [
@@ -344,7 +345,7 @@ const devOpsCloudProjects: PortfolioProject[] = [
         description:
             'Designed and integrated a real-time notification system for couriers. Managed data flows and event triggers for every new order and improved responsiveness to reduce order handling time.',
 
-        period: '1 year',
+        period: '2023 - 2024',
         role: 'Web Developer',
 
         skills: [

@@ -5,6 +5,20 @@ export const PROJECT_PREVIEW_IMAGE_SIZES = '(max-width: 767px) 0px, clamp(220px,
 export const PROJECT_DETAILS_IMAGE_SIZES =
     '(max-width: 767px) calc(100vw - 4.5rem), min(calc(42vw - 2rem), 44rem)';
 
+interface ManifestVariant {
+    filename: string;
+    width: number;
+}
+
+interface ManifestEntry {
+    id: string;
+    width: number;
+    height: number;
+    previewVariants: ManifestVariant[];
+    detailVariants: ManifestVariant[];
+    detailOriginal?: ManifestVariant;
+}
+
 interface ProjectImageSet {
     preview: ResponsiveImageSource;
     details: ResponsiveImageSource;
@@ -66,7 +80,7 @@ const createResponsiveImage = (
 };
 
 const responsiveProjectImages = Object.fromEntries(
-    responsiveManifest.map((entry) => {
+    (responsiveManifest as ManifestEntry[]).map((entry) => {
         const previewCandidates = getGeneratedCandidates(entry.id, entry.previewVariants);
         const preview = createResponsiveImage(previewCandidates, entry.width, entry.height);
 
